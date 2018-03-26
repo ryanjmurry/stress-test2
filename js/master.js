@@ -31,11 +31,13 @@ Test.prototype.Results = function () {
     copingTotal += coping[i];
   }
 
-  if (warningsTotal + symptomsTotal <= 12) {
+  if (warningsTotal + symptomsTotal <= 3) {
     return "no stress"
-  } else if (warningsTotal + symptomsTotal > 12 && copingTotal < 9) {
+  } else if (warningsTotal + symptomsTotal > 3 && warningsTotal + symptomsTotal <= 10) {
+    return "slightly stressed"
+  } else if (warningsTotal + symptomsTotal > 10 && copingTotal < 5) {
     return "stress"
-  } else if (warningsTotal + symptomsTotal > 12 && copingTotal >= 9) {
+  } else if (warningsTotal + symptomsTotal > 10 && copingTotal >= 5) {
     return "coping"
   }
 };
@@ -67,6 +69,8 @@ $(document).ready(function() {
         var results = stressTest.Results();
         if (results === "no stress") {
           $("#no-stress-results").show();
+        } else if (results === "slightly stressed") {
+          $("#slight-stress-results").show();
         } else if (results === "stress") {
           $("#stress-results").show();
         } else if (results === "coping") {
