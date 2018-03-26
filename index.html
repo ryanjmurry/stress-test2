@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/master.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/master.js"></script>
+    <meta charset="utf-8">
+    <title>Stress-Test</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to the Stress Test #2</h1>
+    </div>
+    <form id="warning-signs">
+      <div class="form-group">
+        <p>Have you felt or experienced any of the following recently? (Pease check all that apply)</p>
+        <input type="checkbox" name="warning-signs" value="1"> Loss of sleep<br>
+        <input type="checkbox" name="warning-signs" value="2"> Loss of appetite<br>
+        <input type="checkbox" name="warning-signs" value="1"> Irritability<br>
+        <input type="checkbox" name="warning-signs" value="1"> Cold or sweaty hands<br>
+        <input type="checkbox" name="warning-signs" value="3"> Sudden attacks of life threatening panic<br>
+        <input type="checkbox" name="warning-signs" value="3"> Rapid or mumbled speech<br>
+        <input type="checkbox" name="warning-signs" value="1"> Social withdrawal and isolation<br>
+        <input type="checkbox" name="warning-signs" value="1"> Difficulty in making decisions<br>
+        <input type="checkbox" name="warning-signs" value="3"> Tremors, trembling of lips, hands<br>
+        <input type="checkbox" name="warning-signs" value="1"> Difficulty concentrating, racing thoughts<br>
+      </div>
+      <button type="submit" class="btn btn-info" id="warning-button">Submit</button>
+    </form>
+    <form id="symptoms">
+      <div class="form-group">
+        <p>Have you noticed any of the following symptoms? (Please check all that apply)</p>
+        <input type="checkbox" name="symptoms" value="1"> Anxiety<br>
+        <input type="checkbox" name="symptoms" value="1"> Weight loss/gain<br>
+        <input type="checkbox" name="symptoms" value="2"> Sleepwalking<br>
+        <input type="checkbox" name="symptoms" value="1"> Feeling overwhelmed<br>
+        <input type="checkbox" name="symptoms" value="3"> Increased blood pressure<br>
+        <input type="checkbox" name="symptoms" value="3"> Increased heart rate<br>
+        <input type="checkbox" name="symptoms" value="2"> Headaches/migraines<br>
+        <input type="checkbox" name="symptoms" value="3"> Hyperventilation<br>
+        <input type="checkbox" name="symptoms" value="1"> Nausea<br>
+        <input type="checkbox" name="symptoms" value="1"> Diarrhea/constipation<br>
+      </div>
+      <button type="submit" class="btn btn-info" id="symptoms-button">Submit</button>
+    </form>
+    <form id="coping">
+      <div class="form-group">
+        <p>Do you use any of the following coping methods to help with your stress? (Pease check all that apply)</p>
+        <input type="checkbox" name="coping" value="3"> Meditation<br>
+        <input type="checkbox" name="coping" value="1"> Petting puppies<br>
+        <input type="checkbox" name="coping" value="1"> Making to-do lists<br>
+        <input type="checkbox" name="coping" value="2"> Physical activity<br>
+        <input type="checkbox" name="coping" value="1"> Talking to someone<br>
+        <input type="checkbox" name="coping" value="2"> Keeping a diary<br>
+        <input type="checkbox" name="coping" value="1"> Saying "NO" to additional responsibility<br>
+        <input type="checkbox" name="coping" value="2"> Break large tasks into bite size problems<br>
+        <input type="checkbox" name="coping" value="1"> Simplify meal times<br>
+        <input type="checkbox" name="coping" value="2"> Schedule play time into every day<br>
+      </div>
+      <button type="submit" class="btn btn-info" id="coping-button">Submit</button>
+    </form>
+    <div id="no-stress-results">
+      <img src="img/relaxed.jpg" alt="relaxed">
+      <h1>You relaxed motherfucker, you!</h1>
+    </div>
+    <div id="stress-results">
+      <img src="img/stressed.jpg" alt="stressed">
+      <h1>Shit...looks like you're stressed out. Check the links for more info.</h1>
+      <ul>
+        <li><a href="https://www.stress.org/stress-effects/">The American Institute of Stress</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Stress_(biology)">Wikipedia: Stress</a></li>
+        <li><a href="http://counseling.eku.edu/100-ways-cope-stress-0">100 Ways to Deal with Stress</a></li>
+        <li><a href="http://theoatmeal.com/djtaf/">Dumb Jokes to Make You Laugh</a></li>
+      </ul>
+    </div>
+    <div id="coping-results">
+      <img src="img/coping.jpg" alt="coping">
+      <h1>Welp, looks like you have stress. The good news, you're a fucking champ at handling it!</h1>
+    </div>
+    <button id="reset" class="btn btn-danger">Reset Stress Test</button>
+    </div>
+  </body>
+</html>
